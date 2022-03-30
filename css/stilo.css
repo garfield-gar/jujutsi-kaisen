@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    
+}
+
+
+:root{
+    --preto:black;
+    --roxo:#712fc3;
+    --pretoclaro:#ff0042;
+    
+}
+
+body{
+    background:var(--preto);  
+    margin:0 auto;
+    max-width: 1200px; 
+}
+
+
+
+header{
+    background-color:var(--preto);
+    font-size: 4.8rem;
+    color:var(--roxo);
+    text-transform: uppercase;
+}
+
+
+.efeito ul {
+    display:flex;
+}
+
+.efeito, ul,  li{
+    transition: 4s;
+    padding:.4rem;
+    list-style:none;
+    
+    
+}
+
+
+.efeito ul  li:hover, li:hover~li
+{
+    transform:translateY(-20rem);
+    transition: 2s;
+    filter:blur(2rem);
+    opacity:0;
+
+}
+
+
+
+
+/*Menu horizontal */
+li{
+    color: var(--roxo);
+}
+
+
+.dropdown {
+   
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+}
+
+.dropdown li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+}
+
+/* The sub dropdown */
+.dropdown ul {
+    /* Border */
+   
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    width: 200px;
+}
+
+/* The second level sub dropdown */
+.dropdown ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.dropdown li:hover {
+    background-color: black;
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+    display: block;
+}
+/*texto*/
+h3 {
+    color: var(--roxo);
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+p{
+    color:white
+}
+
+/*estilo link*/
+.container-menu {
+    text-decoration: none;
+    text-transform:uppercase;
+    margin: 10px;
+    color: var(--roxo);
+    cursor: pointer;
+    border-bottom:5px solid var(--roxo);
+}
+
+a{
+    text-decoration: none;
+    text-transform:uppercase;
+    margin:5px;
+    color: var(--roxo)
+}
+
+/*formatação de video*/
+
+.video{
+display:block;
+margin:0 auto;
+width:0 auto;
+height: 340px;  
+
+}
+
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.container div{
+    width:90%;
+    padding:10%
+}
+
+
+video{
+    padding-top: 5px;
+}
